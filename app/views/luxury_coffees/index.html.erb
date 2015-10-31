@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Luxury Coffees</h1>
+
+<% @luxury_coffees.each do |luxury_coffee| %>
+  <div class="product">
+    <h3><%= luxury_coffee.name %></h3>
+    <div class="image">
+      <%= image_tag luxury_coffee.image %>
+    </div>
+    <p><%= luxury_coffee.description %></p>
+    <div class="intensity intensity<%= luxury_coffee.intensity %>">
+      <%= luxury_coffee.intensity %>
+    </div>
+    <div class="price">
+      <%= number_to_currency(luxury_coffee.price) %>
+    </div>
+    <div class="actions"
+      <%= link_to 'Show', luxury_coffee %> |
+      <%= link_to 'Edit', edit_luxury_coffee_path(luxury_coffee) %> |
+      <%= link_to 'Destroy', luxury_coffee, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+  </div>
+<% end %>
+
+<%= link_to 'New Luxury coffee', new_luxury_coffee_path %>

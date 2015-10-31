@@ -1,0 +1,2 @@
+module LuxuryCoffeesHelper
+end

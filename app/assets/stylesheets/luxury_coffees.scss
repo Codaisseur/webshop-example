@@ -1,0 +1,43 @@
+// Place all the styles related to the LuxuryCoffees controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.product {
+  width: 28%;
+  margin-right: 2%;
+  float: left;
+
+  .image img {
+    width: 100%
+  }
+
+  .intensity {
+    color: #f6f6f6;
+    text-align: center;
+
+    &.intensity1 {
+      width: 25%;
+      background-color: #ffc;
+      color: #323232;
+    }
+
+    &.intensity2 {
+      width: 50%;
+      background-color: #fc9;
+    }
+
+    &.intensity3 {
+      width: 75%;
+      background-color: #f96;
+    }
+
+    &.intensity4 {
+      width: 100%;
+      background-color: #f30;
+    }
+  }
+
+  .price {
+    font-size: 3.2em;
+    line-height: 1.2em;
+  }
+}

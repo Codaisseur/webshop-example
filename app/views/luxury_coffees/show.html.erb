@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @luxury_coffee.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @luxury_coffee.description %>
+</p>
+
+<p>
+  <strong>Intensity:</strong>
+  <%= @luxury_coffee.intensity %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @luxury_coffee.price %>
+</p>
+
+<%= link_to 'Edit', edit_luxury_coffee_path(@luxury_coffee) %> |
+<%= link_to 'Back', luxury_coffees_path %>
