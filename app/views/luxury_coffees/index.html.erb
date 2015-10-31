@@ -6,7 +6,7 @@
   <div class="product">
     <h3><%= luxury_coffee.name %></h3>
     <div class="image">
-      <%= image_tag luxury_coffee.image %>
+      <%= image_tag luxury_coffee.image.url if luxury_coffee.image.present? %>
     </div>
     <p><%= luxury_coffee.description %></p>
     <div class="intensity intensity<%= luxury_coffee.intensity %>">
